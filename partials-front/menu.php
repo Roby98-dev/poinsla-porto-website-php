@@ -7,14 +7,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='icon' href='../assets/images/poinsla-icon.JPG' type='image/x-icon' />
+    <meta name="theme-color" content="#009578">
+    <link rel='icon' href='<?= SITEURL; ?>assets/images/poinsla-icon.JPG' type='image/x-icon' />
 
     <title>Poinsla | Website</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="assets/css/main-front.css?v=<?= time(); ?>">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?= SITEURL; ?>assets/fonts/css/all.css">
+    <link rel="manifest" href="<?= SITEURL; ?>manifest.json">
+    <link rel="apple-touch-icon" href="<?= SITEURL; ?>images-icons/icon_192.png">
 </head>
 
 <body>

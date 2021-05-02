@@ -1,6 +1,6 @@
 <section class="categories">
+    <h2 class="text-center text-uppercase mt-4 mb-3">Tech I Use</h2>
     <div class="container pb-5">
-        <h2 class="text-center text-uppercase mt-4 mb-3">Tech I Use</h2>
         <div class="row">
 
             <?php

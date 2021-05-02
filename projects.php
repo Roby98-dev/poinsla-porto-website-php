@@ -24,7 +24,7 @@
             ?>
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
-                        <div class="card col-lg-4 col-md-12 col-sm-12 mb-3" style="width: 18rem;">
+                        <div class="card">
                             <?php
                             if ($image_name == "") {
                             ?>

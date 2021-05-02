@@ -28,7 +28,6 @@
                                     <img class="img-fluid" src="assets/images/dafault/dafault.jpeg">
                                 <?php
                                 } else {
-                                    //Image Available
                                 ?>
                                     <img src="<?= SITEURL; ?>images/category/<?= $image_name; ?>" alt="Pizza" class="img-fluid">
                                 <?php

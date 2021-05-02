@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg ms-auto navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand logo" href="<?= SITEURL; ?>" title="Logo">
                 <img src="images/logo-poinsla.png" alt="Restaurant Logo" class="img-fluid img-responsive">

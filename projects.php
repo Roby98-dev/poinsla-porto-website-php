@@ -59,7 +59,7 @@
     </div>
 
     <p class="text-center">
-        <a href="<?= SITEURL; ?>foods.php">See All My Work</a>
+        <a class="btn" href="<?= SITEURL; ?>foods.php">See All My Work</a>
     </p>
     </div>
 </section>

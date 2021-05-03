@@ -7,7 +7,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#009578">
     <link rel='icon' href='<?= SITEURL; ?>assets/images/poinsla-icon.JPG' type='image/x-icon' />
 
     <title>Poinsla | Website</title>
@@ -16,8 +15,6 @@
     <link rel="stylesheet" href="<?php SITEURL; ?>assets/css/main-front.css?v=<?= time(); ?>">
     <link rel="stylesheet" href="<?php SITEURL; ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/fonts/css/all.css">
-    <link rel="manifest" href="<?= SITEURL; ?>manifest.json">
-    <link rel="apple-touch-icon" href="<?= SITEURL; ?>images-icons/icon_192.png">
 </head>
 
 <body>

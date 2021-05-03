@@ -16,7 +16,8 @@
     </div>
 </div>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?php SITEURL; ?>assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?php SITEURL; ?>assets/js/main.js"></script>
 </body>
 
 </html>

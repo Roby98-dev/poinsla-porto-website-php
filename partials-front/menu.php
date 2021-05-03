@@ -13,8 +13,8 @@
     <title>Poinsla | Website</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="assets/css/main-front.css?v=<?= time(); ?>">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php SITEURL; ?>assets/css/main-front.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?php SITEURL; ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/fonts/css/all.css">
     <link rel="manifest" href="<?= SITEURL; ?>manifest.json">
     <link rel="apple-touch-icon" href="<?= SITEURL; ?>images-icons/icon_192.png">

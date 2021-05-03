@@ -20,19 +20,8 @@
 
                     <div class="col-lg-3 col-md-4 col-sm-12 mt-3 d-flex justify-content-center">
                         <a href="<?= SITEURL; ?>category-foods.php?category_id=<?= $id; ?>">
-                            <div class="card bg-dark">
-                                <div class="">
-                                    <?php
-                                    if ($image_name == "") {
-                                    ?>
-                                        <img class="rounded img-fluid" src="assets/images/dafault/dafault.jpeg" alt="<?= $title; ?>">
-                                    <?php
-                                    } else {
-                                    ?>
-                                        <img src="<?= SITEURL; ?>images/category/<?= $image_name; ?>" alt="Pizza" class="rounded img-fluid">
-                                    <?php
-                                    }
-                                    ?>
+                            <div class="tech-card card bg-dark">
+                                <div class="card-body">
                                     <h4 class="text-center text-uppercase text-light mt-2 mb-2"><?= $title; ?></h4>
                                 </div>
                             </div>

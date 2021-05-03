@@ -150,6 +150,10 @@ nav .navbar-nav li:hover::after {
   padding-top: 3rem;
 }
 
+.tech-card {
+  width: 17rem;
+}
+
 .categories h2::after {
   content: "";
   height: 2px;

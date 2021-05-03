@@ -11,7 +11,7 @@
     <!-- footer Section Starts Here -->
     <div class="footer-front pb-4">
         <div class="container text-center">
-            <p><?= date('Y'); ?> All rights reserved. Designed By <a href="https://poinsla.xyz">Poinsla.xyz</a> || <a href="<?= SITEURL; ?>admin/">admin</a></p>
+            <p>&copy; <?= date('Y'); ?> All rights reserved. Designed By <a href="https://poinsla.xyz">Poinsla.xyz</a> || <a href="<?= SITEURL; ?>admin/">admin</a></p>
         </div>
     </div>
 </div>

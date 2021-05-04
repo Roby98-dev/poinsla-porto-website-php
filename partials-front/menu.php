@@ -12,8 +12,8 @@
     <title>Poinsla | Website</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="<?php SITEURL; ?>assets/css/main-front.css?v=<?= time(); ?>">
-    <link rel="stylesheet" href="<?php SITEURL; ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= SITEURL; ?>assets/css/main-front.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= SITEURL; ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/fonts/css/all.css">
 </head>
 

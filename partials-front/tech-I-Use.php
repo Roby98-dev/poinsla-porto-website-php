@@ -19,10 +19,10 @@
             ?>
 
                     <div class="col-lg-3 col-md-12 col-sm-12 mt-3 d-flex justify-content-center">
-                        <a href="<?= SITEURL; ?>category-foods.php?category_id=<?= $id; ?>">
+                        <a class="hover" href="<?= SITEURL; ?>category-foods.php?category_id=<?= $id; ?>">
                             <div class="tech-card card bg-light shadow">
                                 <div class="card-body border border-info">
-                                    <h4 class="text-dark text-center text-uppercase text-light mt-2 mb-2"><?= $title; ?></h4>
+                                    <h4 class="title text-dark text-center text-uppercase mt-2 mb-2"><?= $title; ?></h4>
                                 </div>
                             </div>
                         </a>

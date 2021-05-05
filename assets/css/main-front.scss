@@ -177,8 +177,20 @@ nav {
         display: block;
         margin: auto;
     }
-    a {
-        text-decoration: none;
+    .container {
+        .row {
+            div {
+                a {
+                    text-decoration: none;
+                    div {
+                        transition: .4s ease;
+                        &:hover {
+                            background-color: rgb(13,202,240);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

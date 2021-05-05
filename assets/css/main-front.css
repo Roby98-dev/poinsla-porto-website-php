@@ -176,8 +176,17 @@ nav .navbar-nav li:hover::after {
   margin: auto;
 }
 
-.categories a {
+.categories .container .row div a {
   text-decoration: none;
+}
+
+.categories .container .row div a div {
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.categories .container .row div a div:hover {
+  background-color: #0dcaf0;
 }
 
 .project {

@@ -144,6 +144,19 @@ nav .navbar-nav li:hover::after {
   z-index: 99;
 }
 
+#about h2::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #f44336;
+  display: block;
+  margin: auto;
+}
+
+.about-image {
+  width: 200px;
+}
+
 .front-search {
   height: 15rem;
   background-color: #bbdfc8;

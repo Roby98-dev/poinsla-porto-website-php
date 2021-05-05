@@ -18,11 +18,11 @@
                     $image_name = $row['image_name'];
             ?>
 
-                    <div class="col-lg-3 col-md-4 col-sm-12 mt-3 d-flex justify-content-center">
+                    <div class="col-lg-3 col-md-12 col-sm-12 mt-3 d-flex justify-content-center">
                         <a href="<?= SITEURL; ?>category-foods.php?category_id=<?= $id; ?>">
-                            <div class="tech-card card bg-dark">
-                                <div class="card-body">
-                                    <h4 class="text-center text-uppercase text-light mt-2 mb-2"><?= $title; ?></h4>
+                            <div class="tech-card card bg-light shadow">
+                                <div class="card-body border border-info">
+                                    <h4 class="text-dark text-center text-uppercase text-light mt-2 mb-2"><?= $title; ?></h4>
                                 </div>
                             </div>
                         </a>

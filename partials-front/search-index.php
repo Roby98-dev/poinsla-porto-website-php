@@ -1,5 +1,5 @@
 <section class="front-search text-center">
-    <ul class="social-media list-inline mt-3" data-aos="fade-left">
+    <ul class="social-media list-inline mt-3">
         <li class="list-inline-item">
             <a class="btn btn-outline-dark btn-social text-center rounded-circle" role="button" href="https://www.instagram.com/poinsla.xyz/">
                 <i class="fab fa-instagram fa-fw"></i>
@@ -21,7 +21,7 @@
         </li>
     </ul>
     <div class="container pt-3 d-flex justify-content-center">
-        <form action="<?= SITEURL; ?>food-search.php" method="POST">
+        <form class="shadow" action="<?= SITEURL; ?>food-search.php" method="POST">
             <div class="input-group">
                 <div class="form-outline">
                     <input type="search" name="search" placeholder="Search for Portfolio.." required class="form-control" />

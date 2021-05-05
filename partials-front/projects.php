@@ -24,15 +24,15 @@
             ?>
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
-                        <div class="card">
+                        <div class="card bg-light shadow text-center">
                             <?php
                             if ($image_name == "") {
                             ?>
-                                <img class="card-img-top img-fluid" src="assets/images/dafault/dafault.jpeg">
+                                <img class="card-img-top px-3 py-3 img-fluid rounded" src="assets/images/dafault/dafault.jpeg">
                             <?php
                             } else {
                             ?>
-                                <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" alt="Chicke Hawain Pizza" class="card-img-top img-responsive">
+                                <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" alt="Chicke Hawain Pizza" class="card-img-top px-3 py-3 rounded">
                             <?php
                             }
                             ?>
@@ -58,8 +58,8 @@
         </div>
     </div>
 
-    <p class="text-center">
-        <a class="btn" href="<?= SITEURL; ?>foods.php">See All My Work</a>
+    <p class="text-center mt-5">
+        <a class="btn btn-primary shadow" href="<?= SITEURL; ?>foods.php">See All My Works</a>
     </p>
     </div>
 </section>

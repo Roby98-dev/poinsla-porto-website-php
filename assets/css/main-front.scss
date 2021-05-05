@@ -142,6 +142,21 @@ nav {
     }
 }
 
+#about {
+    h2::after {
+        content: "";
+        height: 2px;
+        width: 10%;
+        background: #f44336;
+        display: block;
+        margin: auto;
+    }
+}
+
+.about-image {
+    width: 200px;
+}
+
 // Front Search
 .front-search {
     height: 15rem;

@@ -1,5 +1,5 @@
 # 🥘 Poinsla Portofolio Project
-In this course, you'll learn to Create a Complete Dynamic and Fully Functional Website using PHP prrogramming language and MySQL Database.
+This is My portfolio Website using PHP prrogramming language and MySQL Database.
 
 
 # ⚙️ Technology Used
@@ -14,10 +14,6 @@ In this course, you'll learn to Create a Complete Dynamic and Fully Functional W
 2. They also can order easily from the website.
 3. Admin can Manage Admin, Caegories and Food Items
 4. Admin can also Manage and Track Food Order and Delivery
-
-
-# 🎓 Access the Course
-[Click Here](https://www.youtube.com/watch?v=ZBgTzx46B8s&list=PLBLPjjQlnVXXBheMQrkv3UROskC0K1ctW) and Learn to develop a fully functional and dynamic **"Food Order System"** with PHP programming language and MySQL Database.
 
 
 ## 👏 Support Developer

@@ -1,6 +1,6 @@
 <section id="about" class="bg-dark text-light pt-5">
+    <h2 class="text-uppercase text-center" data-aos="fade-up">About Me</h2>
     <div class="container">
-        <h2 class="text-uppercase text-center text-light" data-aos="fade-up">About Me</h2>
         <div class="row about-me pb-5 border-bottom mt-5">
             <div class="col-lg d-flex justify-content-center mb-5" data-aos="fade-right" data-aos-duration="1000">
                 <img class="about-image img-fluid rounded shadow" src="<?= SITEURL; ?>assets/images/about/about-me.jpeg" alt="Roby Adi Putra">

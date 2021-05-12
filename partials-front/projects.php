@@ -1,4 +1,4 @@
-<section class="project pt-4 pb-4">
+<section class="project bg-dark pt-4 pb-4">
     <h2 class="text-center text-uppercase">Portfolio</h2>
     <div class="container">
         <div class="row mt-5">

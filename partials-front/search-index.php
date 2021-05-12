@@ -1,21 +1,21 @@
-<section class="front-search text-center">
+<section class="front-search bg-dark text-center">
     <ul class="social-media list-inline mt-3">
         <li class="list-inline-item">
-            <a class="btn btn-outline-dark btn-social text-center rounded-circle" role="button" href="https://www.instagram.com/poinsla.xyz/">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.instagram.com/poinsla.xyz/">
                 <i class="fab fa-instagram fa-fw"></i>
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn btn-outline-dark btn-social text-center rounded-circle" role="button" href="https://twitter.com/roby_hjz">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://twitter.com/roby_hjz">
                 <i class="fab fa-twitter fa-fw"></i>
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn btn-outline-dark btn-social text-center rounded-circle" role="button" href="https://github.com/Roby98-dev"><i class="fab fa-github fa-fw"></i>
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://github.com/Roby98-dev"><i class="fab fa-github fa-fw"></i>
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn btn-outline-dark btn-social text-center rounded-circle" role="button" href="https://www.linkedin.com/in/i-kadek-roby-adi-putra-6a473b161/">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.linkedin.com/in/i-kadek-roby-adi-putra-6a473b161/">
                 <i class="fab fa-linkedin fa-fw"></i>
             </a>
         </li>

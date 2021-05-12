@@ -1,81 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import "colors";
-
-* {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-/* 
----------------------------------------------
-reset
---------------------------------------------- 
-*/
-html, body, div, span, applet, object, iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-div pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-figure,
-header,
-nav,
-section,
-article,
-aside,
-footer,
-figcaption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  text-decoration: none;
-}
-
-// colors Variables
-$dark-color: #171819;
-$color-second: #bbdfc8;
-
-$layout-breakpoint-small: 480px;
+@import "variables";
+@import "base";
+@import "contact";
+@import "skills";
+@import "tech-I-Use";
+@import "about";
 
 /* 
 ---------------------------------------------
@@ -144,25 +72,6 @@ nav {
     }
 }
 
-#about {
-    h2::after {
-        content: "";
-        height: 2px;
-        width: 10%;
-        background: #f44336;
-        display: block;
-        margin: auto;
-    }
-}
-
-.about-image {
-    width: 200px;
-}
-
-.about-card {
-    background-color: $dark-secondary;
-}
-
 // Front Search
 .front-search {
     height: 15rem;
@@ -174,39 +83,16 @@ nav {
     width: 17rem;
 }
 
-.categories {
-    h2::after {
-        content: "";
-        height: 2px;
-        width: 10%;
-        background: #f44336;
-        display: block;
-        margin: auto;
-    }
-    .container {
-        .row {
-            div {
-                a {
-                    text-decoration: none;
-                    div {
-                        transition: .4s ease;
-                        &:hover {
-                            background-color: rgb(13,202,240);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 .project {
     background-color: $color-second;
+    h2 {
+        color: $text-color;
+    }
     h2::after {
         content: "";
         height: 2px;
         width: 10%;
-        background: #f44336;
+        background: $text-color;
         display: block;
         margin: auto;
     }
@@ -235,28 +121,6 @@ nav {
 
 .project-items {
     background-color: $dark-secondary;
-}
-
-#skills {
-    h2::after {
-        content: "";
-        height: 2px;
-        width: 10%;
-        background: #f44336;
-        display: block;
-        margin: auto;
-    }
-}
-
-.this-contact {
-    h2::after {
-        content: "";
-        height: 2px;
-        width: 10%;
-        background: #f44336;
-        display: block;
-        margin: auto;
-    }
 }
 
 .porto-search {

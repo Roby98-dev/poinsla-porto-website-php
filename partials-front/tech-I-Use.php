@@ -1,5 +1,5 @@
 <section class="categories bg-dark pt-4">
-    <h2 class="text-center text-uppercase text-light mb-3">Tech I Use</h2>
+    <h2 class="text-center text-uppercase mb-3">Tech I Use</h2>
     <div class="container pb-5">
         <div class="row">
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap");
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   font-weight: 500;
 }
 
@@ -67,6 +67,87 @@ figcaption {
   border: 0;
   outline: 0;
   text-decoration: none;
+}
+
+.this-contact h2 {
+  color: #00aa00;
+}
+
+.this-contact h2::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #00aa00;
+  display: block;
+  margin: auto;
+}
+
+.card-address {
+  background-color: #2E3A48;
+}
+
+#skills h2 {
+  color: #00aa00;
+}
+
+#skills h2::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #00aa00;
+  display: block;
+  margin: auto;
+}
+
+.card-skills {
+  background-color: #2E3A48;
+}
+
+.categories h2 {
+  color: #00aa00;
+}
+
+.categories h2::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #00aa00;
+  display: block;
+  margin: auto;
+}
+
+.categories .container .row div a {
+  text-decoration: none;
+}
+
+.categories .container .row div a div {
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.categories .container .row div a div:hover {
+  background-color: #0dcaf0;
+}
+
+#about h2 {
+  color: #00aa00;
+}
+
+#about h2::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #00aa00;
+  display: block;
+  margin: auto;
+}
+
+.about-image {
+  width: 200px;
+}
+
+.about-card {
+  background-color: #2E3A48;
 }
 
 /* 
@@ -145,23 +226,6 @@ nav .navbar-nav li:hover::after {
   z-index: 99;
 }
 
-#about h2::after {
-  content: "";
-  height: 2px;
-  width: 10%;
-  background: #f44336;
-  display: block;
-  margin: auto;
-}
-
-.about-image {
-  width: 200px;
-}
-
-.about-card {
-  background-color: #2E3A48;
-}
-
 .front-search {
   height: 15rem;
   background-color: #bbdfc8;
@@ -172,37 +236,19 @@ nav .navbar-nav li:hover::after {
   width: 17rem;
 }
 
-.categories h2::after {
-  content: "";
-  height: 2px;
-  width: 10%;
-  background: #f44336;
-  display: block;
-  margin: auto;
-}
-
-.categories .container .row div a {
-  text-decoration: none;
-}
-
-.categories .container .row div a div {
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
-}
-
-.categories .container .row div a div:hover {
-  background-color: #0dcaf0;
-}
-
 .project {
   background-color: #bbdfc8;
+}
+
+.project h2 {
+  color: #00aa00;
 }
 
 .project h2::after {
   content: "";
   height: 2px;
   width: 10%;
-  background: #f44336;
+  background: #00aa00;
   display: block;
   margin: auto;
 }
@@ -226,24 +272,6 @@ nav .navbar-nav li:hover::after {
 
 .project-items {
   background-color: #2E3A48;
-}
-
-#skills h2::after {
-  content: "";
-  height: 2px;
-  width: 10%;
-  background: #f44336;
-  display: block;
-  margin: auto;
-}
-
-.this-contact h2::after {
-  content: "";
-  height: 2px;
-  width: 10%;
-  background: #f44336;
-  display: block;
-  margin: auto;
 }
 
 .porto-search {

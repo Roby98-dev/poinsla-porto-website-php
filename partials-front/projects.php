@@ -24,7 +24,7 @@
             ?>
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
-                        <div class="card bg-light shadow text-center">
+                        <div class="card project-items shadow text-center">
                             <?php
                             if ($image_name == "") {
                             ?>
@@ -37,11 +37,11 @@
                             }
                             ?>
                             <div class="card-body">
-                                <h5 class="card-title"><?= $title; ?></h5>
+                                <h5 class="card-title text-light"><?= $title; ?></h5>
                                 <p class="card-text text-secondary">
                                     <?= $description; ?>
                                 </p>
-                                <a href="<?= $price; ?>" class="btn btn-primary">Visit now!</a>
+                                <a href="<?= $price; ?>" class="btn btn-primary mt-3">Visit now!</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
     </div>
 
     <p class="text-center mt-5">
-        <a class="btn btn-primary shadow" href="<?= SITEURL; ?>foods.php">See All My Works</a>
+        <a class="btn btn-primary shadow" href="<?= SITEURL; ?>foods.php">See All My Work</a>
     </p>
     </div>
 </section>

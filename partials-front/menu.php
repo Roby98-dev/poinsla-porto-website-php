@@ -7,6 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-theme" content="#2E3A48">
     <link rel='icon' href='<?= SITEURL; ?>assets/images/poinsla-icon.JPG' type='image/x-icon' />
 
     <title>Poinsla | Website</title>

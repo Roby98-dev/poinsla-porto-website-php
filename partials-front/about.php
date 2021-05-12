@@ -15,19 +15,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="card about-card shadow" style="height: 28rem;">
+                    <div class="card about-card shadow" style="height: 29rem;">
                         <img style="width: 150px;" class="card-image img-fluid d-block mx-auto card-img-top mt-3" src="<?= SITEURL; ?>assets/images/about/icon-about-1.svg" alt="">
                         <div class="card-body text-center">I am graduated from Tourism School at Internation Tourism Collage, after graduated I worked in a Tours & Travel company engaged in operation based in Bali for 2 years and after that I joined PT Kebo Iwa Express as a booking agent, web developer and administration.</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
-                    <div class="card about-card shadow" style="height: 28rem;">
+                    <div class="card about-card shadow" style="height: 29rem;">
                         <img style="width: 150px;" class="card-image img-fluid d-block mx-auto card-img-top mt-3" src="<?= SITEURL; ?>assets/images/about/icon-about-2.svg" alt="">
                         <div class="card-body text-center">I am a person who is very enthusiastic about technology especially programming and because I'am graduated from English, it makes it easier for me to learn programming to understand what programming is.</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="card about-card shadow" style="height: 28rem;">
+                    <div class="card about-card shadow" style="height: 29rem;">
                         <img style="width: 150px;" class="card-image img-fluid d-block mx-auto card-img-top mt-3" src="<?= SITEURL; ?>assets/images/about/icon-about-3.svg" alt="">
                         <div class="card-body text-center">My goal is to solve problems with technology. I believe anything can be overcome through commitment and hard work. Always up for learning new things.</div>
                     </div>

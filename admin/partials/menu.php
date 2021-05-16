@@ -13,7 +13,7 @@ include('login-check.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Poinsla Food Order Website | Home Page</title>
 
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../assets/css/main-front.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 </head>
 
@@ -31,13 +31,13 @@ include('login-check.php');
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manage-admin.php">Admin</a>
+                        <a class="nav-link" href="manage-skills.php">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="manage-category.php">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manage-food.php">Food</a>
+                        <a class="nav-link" href="manage-food.php">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="manage-order.php">Order</a>

@@ -50,7 +50,7 @@
                 }
             } else {
                 ?>
-                <div class='alert alert-danger'>Food not available.</div>
+                <div class='alert alert-danger'>Portfolio not available.</div>
             <?php
             }
 

@@ -1,4 +1,5 @@
-    <?php include('partials-front/menu.php'); ?>
+    <?php include_once('partials-front/menu.php'); ?>
+    <?php include_once('partials-front/nav.php'); ?>
 
     <?php
     if (isset($_GET['category_id'])) {
@@ -15,7 +16,7 @@
     }
     ?>
 
-    <section class="food-search text-center">
+    <section class="porto-search text-center bg-secondary py-5">
         <div class="container">
             <h2>
                 <p class="text-white">"<?= $category_title; ?>"</p>
@@ -23,14 +24,13 @@
         </div>
     </section>
 
-    <section class="food-menu">
-        <h2 class="text-center text-uppercase">Portfolio</h2>
+    <section class="category-projects bg-dark py-5">
         <div class="container">
-            <div class="row d-flex justify-content-center my-5">
+            <div class="row d-flex justify-content-center">
 
                 <?php
 
-                $sql2 = "SELECT * FROM tbl_food WHERE category_id=$category_id";
+                $sql2 = "SELECT * FROM tbl_food WHERE category_id=$category_id ORDER BY id DESC";
 
                 $res2 = mysqli_query($conn, $sql2);
 
@@ -47,24 +47,24 @@
                 ?>
 
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
-                            <div class="card">
-                                <?php
-                                if ($image_name == "") {
-                                ?>
-                                    <img class="card-img-top img-fluid" src="assets/images/dafault/dafault.jpeg">
-                                <?php
-                                } else {
-                                ?>
-                                    <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" alt="Chicke Hawain Pizza" class="card-img-top img-responsive">
-                                <?php
-                                }
-                                ?>
-                                <div class="card-body">
-                                    <h5 class="card-title"><?= $title; ?></h5>
+                            <div class="card project-items">
+                                <div class="card-body text-center">
+                                    <?php
+                                    if ($image_name == "") {
+                                    ?>
+                                        <img class="card-img-top img-fluid" src="assets/images/dafault/dafault.jpeg">
+                                    <?php
+                                    } else {
+                                    ?>
+                                        <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" alt="Chicke Hawain Pizza" class="card-img-top img-responsive">
+                                    <?php
+                                    }
+                                    ?>
+                                    <h5 class="card-title text-light text-uppercase mt-3"><?= $title; ?></h5>
                                     <p class="card-text text-secondary">
                                         <?= $description; ?>
                                     </p>
-                                    <a href="<?= $price; ?>" class="btn btn-primary">Visit now!</a>
+                                    <a href="<?= $price; ?>" class="btn btn-primary mt-4">Visit now!</a>
                                 </div>
                             </div>
                         </div>

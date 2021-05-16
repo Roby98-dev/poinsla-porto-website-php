@@ -1,7 +1,7 @@
 <?php include('partials/menu.php'); ?>
 
 <div class="container">
-    <h1 class="text-center mt-5">Add Category</h1>
+    <h1 class="text-center mt-5 text-uppercase">Add Category</h1>
 
     <br><br>
 

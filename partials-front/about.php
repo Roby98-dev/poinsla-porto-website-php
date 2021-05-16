@@ -1,4 +1,4 @@
-<section id="about" class="bg-dark text-light pt-5">
+<section id="about" class="bg-dark text-light py-5">
     <h2 class="text-uppercase text-center" data-aos="fade-up">About Me</h2>
     <div class="container">
         <div class="row about-me pb-5 border-bottom mt-5">

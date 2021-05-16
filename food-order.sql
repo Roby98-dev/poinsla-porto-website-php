@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 30, 2021 at 04:21 PM
+-- Generation Time: May 17, 2021 at 12:37 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -40,8 +40,7 @@ CREATE TABLE `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`) VALUES
 (12, 'Administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
-(13, 'Roby Adi Putra', 'roby', 'f99cc4e7daff1b96f7d221bd8d7aedef'),
-(16, 'Eva Ardonis', 'ardonis', '6cf49709307dff6acb3bcb15a22aa0b1');
+(13, 'Roby Adi Putra', 'roby', 'f99cc4e7daff1b96f7d221bd8d7aedef');
 
 -- --------------------------------------------------------
 
@@ -65,7 +64,7 @@ INSERT INTO `tbl_category` (`id`, `title`, `image_name`, `featured`, `active`) V
 (4, 'Pizza', 'Food_Category_790.jpg', 'Yes', 'Yes'),
 (5, 'Burger', 'Food_Category_344.jpg', 'Yes', 'Yes'),
 (6, 'MoMo', 'Food_Category_77.jpg', 'Yes', 'Yes'),
-(8, 'Quia est ipsum id id', 'Food_Category_929.jpg', 'No', 'Yes'),
+(8, 'Quia ipsum', 'Food_Category_929.jpg', 'No', 'Yes'),
 (9, 'Bakso', '', 'Yes', 'Yes');
 
 -- --------------------------------------------------------
@@ -126,6 +125,30 @@ INSERT INTO `tbl_order` (`id`, `food`, `price`, `qty`, `total`, `order_date`, `s
 (2, 'Best Burger', '4.000', 4, '16.000', '2020-11-30 03:52:43', 'Delivered', 'Kelly Dillard', '+1 (908) 914-3106', 'fexekihor@mailinator.com', 'Incidunt ipsum ad d'),
 (3, 'Mixed Pizza', '10.000', 2, '20.000', '2020-11-30 04:07:17', 'Delivered', 'Jana Bush', '+1 (562) 101-2028', 'tydujy@mailinator.com', 'Minima iure ducimus');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_skills`
+--
+
+CREATE TABLE `tbl_skills` (
+  `id` int(11) NOT NULL,
+  `title` varchar(126) NOT NULL,
+  `percent` int(11) NOT NULL,
+  `active` varchar(126) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_skills`
+--
+
+INSERT INTO `tbl_skills` (`id`, `title`, `percent`, `active`) VALUES
+(1, 'Html & Css', 40, 'Yes'),
+(2, 'Javascript', 37, 'Yes'),
+(5, 'Php', 35, 'Yes'),
+(6, 'Wordpress', 40, 'Yes'),
+(7, 'bootstrap', 70, 'Yes');
+
 --
 -- Indexes for dumped tables
 --
@@ -155,6 +178,12 @@ ALTER TABLE `tbl_order`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_skills`
+--
+ALTER TABLE `tbl_skills`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -181,6 +210,12 @@ ALTER TABLE `tbl_food`
 --
 ALTER TABLE `tbl_order`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `tbl_skills`
+--
+ALTER TABLE `tbl_skills`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -156,7 +156,7 @@ header
 --------------------------------------------- 
 */
 nav .logo {
-  width: 100px;
+  width: 80px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -183,7 +183,7 @@ nav .navbar-nav li:hover::after {
 }
 
 .masthead {
-  padding-top: calc(6rem + 50px);
+  padding-top: calc(6rem + 60px);
   padding-bottom: 6rem;
 }
 
@@ -191,7 +191,7 @@ nav .navbar-nav li:hover::after {
   background-image: url(../images/hero/background.jpg);
   background-attachment: fixed;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   z-index: -2;
 }
@@ -227,9 +227,7 @@ nav .navbar-nav li:hover::after {
 }
 
 .front-search {
-  height: 15rem;
   background-color: #bbdfc8;
-  padding-top: 3rem;
 }
 
 .tech-card {
@@ -257,11 +255,15 @@ nav .navbar-nav li:hover::after {
   text-decoration: none;
 }
 
+.projects h2 {
+  color: #00aa00;
+}
+
 .projects h2::after {
   content: "";
   height: 2px;
   width: 10%;
-  background: #f44336;
+  background: #00aa00;
   display: block;
   margin: auto;
 }
@@ -287,7 +289,11 @@ nav .navbar-nav li:hover::after {
   margin: auto;
 }
 
-.footer-front .container p {
+.footer-front {
+  background-color: black;
+}
+
+.footer-front div .container p {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=main-front.css.map */

@@ -1,7 +1,7 @@
 <?php include_once('partials/menu.php'); ?>
 
 <div class="container">
-    <h1 class="text-center mt-5">Manage Food</h1>
+    <h1 class="text-center mt-5 text-uppercase">Manage Portfolios</h1>
     <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn btn-primary mb-3">Add Food</a>
     <div class="row">
 
@@ -36,19 +36,19 @@
         <div class="table-responsive mb-5">
             <table class="table">
                 <tr class="table-dark">
-                    <th>S.N.</th>
+                    <th>#</th>
                     <th>Title</th>
                     <th>Price</th>
                     <th>Image</th>
                     <th>Featured</th>
                     <th>Active</th>
-                    <th>Update</th>
+                    <th>Edit</th>
                     <th>Delete</th>
                 </tr>
 
                 <?php
                 //Create a SQL Query to Get all the Food
-                $sql = "SELECT * FROM tbl_food";
+                $sql = "SELECT * FROM tbl_food ORDER BY id DESC";
 
                 //Execute the qUery
                 $res = mysqli_query($conn, $sql);
@@ -89,10 +89,10 @@
                             <td><?= $featured; ?></td>
                             <td><?= $active; ?></td>
                             <td>
-                                <a href="<?= SITEURL; ?>admin/update-food.php?id=<?= $id; ?>" class="btn btn-secondary">Update Food</a>
+                                <a href="<?= SITEURL; ?>admin/update-food.php?id=<?= $id; ?>" class="btn btn-secondary">Edit</a>
                             </td>
                             <td>
-                                <a href="<?= SITEURL; ?>admin/delete-food.php?id=<?= $id; ?>&image_name=<?= $image_name; ?>" class="btn btn-danger">Delete Food</a>
+                                <a href="<?= SITEURL; ?>admin/delete-food.php?id=<?= $id; ?>&image_name=<?= $image_name; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                 <?php

@@ -1,8 +1,9 @@
 <?php include('partials-front/menu.php'); ?>
+<?php include_once('partials-front/nav.php'); ?>
 
-<section class="this-contact pt-5 pb-5 bg-light " id="contact ">
+<section class="this-contact pt-5 pb-5 bg-dark text-light" id="contact ">
+    <h2 class="text-uppercase text-center mb-4">Contact Me</h2>
     <div class="container">
-        <h2 class="text-uppercase text-center text-secondary mb-4">Contact Me</h2>
         <div class="row">
             <div class="contact-form col-lg-8 mx-auto">
                 <form id="contact-form">

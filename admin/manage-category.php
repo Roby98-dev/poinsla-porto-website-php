@@ -1,7 +1,7 @@
 <?php include('partials/menu.php'); ?>
 
 <div class="container">
-    <h1 class="text-center mt-5">Manage Category</h1>
+    <h1 class="text-center mt-5 text-uppercase">Manage Category</h1>
     <a href="<?= SITEURL; ?>admin/add-category.php" class="btn btn-primary mb-3">Add Category</a>
     <div class="row">
 
@@ -52,13 +52,13 @@
                     <th>Image</th>
                     <th>Featured</th>
                     <th>Active</th>
-                    <th>Update</th>
+                    <th>Edit</th>
                     <th>Delete</th>
                 </tr>
 
                 <?php
                 //Query to Get all CAtegories from Database
-                $sql = "SELECT * FROM tbl_category";
+                $sql = "SELECT * FROM tbl_category ORDER BY id DESC";
 
                 //Execute Query
                 $res = mysqli_query($conn, $sql);
@@ -102,7 +102,7 @@
                             <td><?= $featured; ?></td>
                             <td><?= $active; ?></td>
                             <td>
-                                <a href="<?= SITEURL; ?>admin/update-category.php?id=<?= $id; ?>" class="btn btn-secondary">Update</a>
+                                <a href="<?= SITEURL; ?>admin/update-category.php?id=<?= $id; ?>" class="btn btn-secondary">Edit</a>
                             </td>
                             <td>
                                 <a href="<?= SITEURL; ?>admin/delete-category.php?id=<?= $id; ?>&image_name=<?= $image_name; ?>" class="btn btn-danger">Delete</a>

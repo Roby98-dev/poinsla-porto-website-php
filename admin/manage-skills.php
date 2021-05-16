@@ -3,8 +3,8 @@ include('partials/menu.php'); ?>
 
 <!-- Main Content Section Starts -->
 <div class="container">
-    <h1 class="text-center mt-5">Manage Admin</h1>
-    <a href="add-admin.php" class="btn btn-primary mt-2 mb-3">Add Admin</a>
+    <h1 class="text-center mt-5 text-uppercase">Manage Skills</h1>
+    <a href="add-skills.php" class="btn btn-primary mt-2 mb-3">Add Skills</a>
     <div class="row">
 
         <?php
@@ -47,15 +47,15 @@ include('partials/menu.php'); ?>
             <table class="table">
                 <tr class="table-dark">
                     <th>#</th>
-                    <th>Full Name</th>
-                    <th>Username</th>
-                    <th>Update Admin</th>
-                    <th>Reset password</th>
+                    <th>Title</th>
+                    <th>Percent</th>
+                    <th>Active</th>
+                    <th>Edit Admin</th>
                     <th>Delete Admin</th>
                 </tr>
 
                 <?php
-                $sql = "SELECT * FROM tbl_admin ORDER BY id DESC";
+                $sql = "SELECT * FROM tbl_skills ORDER BY id DESC";
                 $res = mysqli_query($conn, $sql);
 
                 if ($res == TRUE) {
@@ -66,22 +66,21 @@ include('partials/menu.php'); ?>
                     if ($count > 0) {
                         while ($rows = mysqli_fetch_assoc($res)) {
                             $id = $rows['id'];
-                            $full_name = $rows['full_name'];
-                            $username = $rows['username'];
+                            $title = $rows['title'];
+                            $percent = $rows['percent'];
+                            $active = $rows['active'];
                 ?>
 
                             <tr>
                                 <td><?= $no++; ?>. </td>
-                                <td><?= $full_name; ?></td>
-                                <td><?= $username; ?></td>
+                                <td class="text-uppercase"><?= $title; ?></td>
+                                <td><?= $percent; ?>%</td>
+                                <td><?= $active; ?></td>
                                 <td>
-                                    <a href="<?= SITEURL; ?>admin/update-admin.php?id=<?= $id; ?>" class="btn btn-secondary">Update</a>
+                                    <a href="<?= SITEURL; ?>admin/update-skills.php?id=<?= $id; ?>" class="btn btn-secondary">Edit</a>
                                 </td>
                                 <td>
-                                    <a href="<?= SITEURL; ?>admin/update-password.php?id=<?= $id; ?>" class="btn btn-primary">Reset password</a>
-                                </td>
-                                <td>
-                                    <a href="<?= SITEURL; ?>admin/delete-admin.php?id=<?= $id; ?>" class="btn btn-danger">Delete</a>
+                                    <a href="<?= SITEURL; ?>admin/delete-skills.php?id=<?= $id; ?>" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>
 

@@ -3,74 +3,40 @@
     <h2 class="text-uppercase text-center mb-0">My Skills</h2>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-lg-6 col-md-12 col-sm-12 text-light">
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-html5"></i> HTML & <i class="fab fa-css3"></i> CSS</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+
+            <?php
+            $sql = "SELECT * FROM tbl_skills WHERE active = 'Yes' ORDER BY id DESC LIMIT 6";
+
+            $res = mysqli_query($conn, $sql);
+
+            $count = mysqli_num_rows($res);
+
+            if ($count > 0) {
+                while ($row = mysqli_fetch_assoc($res)) {
+                    $id = $row['id'];
+                    $title = $row['title'];
+                    $percent = $row['percent'];
+                    $active = $row['active'];
+            ?>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-light">
+                        <div class="card shadow card-skills mb-2">
+                            <div class="card-body text-uppercase">
+                                <h5 class="mt-3 mb-2"><?= $title; ?></h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="<?= $percent; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $percent; ?>%;"><?= $percent; ?>%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-bootstrap"></i> Bootstrap</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-phoenix-framework"></i> Materiallize</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-js-square"></i> JavaScript</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">35%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 text-light">
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-react"></i> React Js</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-wordpress"></i> WordPress</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">65%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-node-js"></i> Node Js</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-skills mb-2">
-                    <div class="card-body">
-                        <h5 class="mt-3 mb-2"><i class="fab fa-joget"></i> jQuery</h5>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">55%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php
+                }
+            } else {
+                ?>
+                <div class='alert alert-danger'>Skills not available.</div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </section>

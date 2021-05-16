@@ -1,37 +1,15 @@
 # 🥘 Poinsla Portofolio Project
+
 This is My portfolio Website using PHP prrogramming language and MySQL Database.
 
-
 # ⚙️ Technology Used
+
 1. HTML5
 2. CSS3
 3. Core/Procedural PHP programming language
 4. MySQL Relational Database
 
-
-# 🧰 Features
-1. Visitors/Users can browse all the Categories and Food Items. 
-2. They also can order easily from the website.
-3. Admin can Manage Admin, Caegories and Food Items
-4. Admin can also Manage and Track Food Order and Delivery
-
-
-## 👏 Support Developer
-1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
-2. Add a Star 🌟  to this 👆 Repository
-
-
-
-## Donate
-
-**[PayPal](https://bit.ly/support-vijay-thapa)**
-
-**[Buy me a Coffee  ☕️](https://www.buymeacoffee.com/vijaythapa)**
-
-**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
-
-
-## 📖  How to Download the Project and Run on your PC?
+## 📖 How to Download the Project and Run on your PC?
 
 ### Pre-Requisites:
 
@@ -45,10 +23,12 @@ This is My portfolio Website using PHP prrogramming language and MySQL Database.
 
 1. Download as as Zip or Clone this project
 2. Move this project to Root Directory
+
 ```
 Local Disc C: -> xampp -> htdocs -> 'this project'
 ```
-*Local Disk C is the location where xampp was installed*
+
+_Local Disk C is the location where xampp was installed_
 
 3. Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
 
@@ -61,8 +41,9 @@ c. Import the SQL file provided with this project
 5. Make Changes to settings
 
 Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
+
 ```php
-<?php 
+<?php
 //Start Session
 session_start();
 
@@ -72,9 +53,9 @@ define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'food-order');
-    
+
 $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //Database Connection
-$db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElecting Database 
+$db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElecting Database
 
 ?>
 ```

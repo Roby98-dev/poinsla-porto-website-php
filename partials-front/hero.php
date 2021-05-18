@@ -3,7 +3,7 @@
         <div class="bg-overlay"></div>
         <img class="profile img-fluid d-block mx-auto mb-5 rounded-circle" src="<?= SITEURL; ?>assets/images/hero/profile.jpeg" alt="Profile Picture">
 
-        <h2>Welcome To My Personal Website!</h2>
+        <h2>Welcome To My Website!</h2>
         <h4>I'am <strong>Roby Adi Putra</strong></h4>
         <div class="type-wrap">
             <div id="typed-strings">

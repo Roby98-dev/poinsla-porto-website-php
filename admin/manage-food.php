@@ -2,7 +2,7 @@
 
 <div class="container">
     <h1 class="text-center mt-5 text-uppercase">Manage Portfolios</h1>
-    <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn btn-primary mb-3">Add Food</a>
+    <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn btn-primary mb-3">Add Portfolio</a>
     <div class="row">
 
         <?php

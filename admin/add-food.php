@@ -1,7 +1,7 @@
 <?php include_once('partials/menu.php'); ?>
 
 <div class="container">
-    <h1 class="text-center mt-5">Add Food</h1>
+    <h1 class="text-center mt-5 text-uppercase">Add Portfolio</h1>
     <?php
     if (isset($_SESSION['upload'])) {
         echo $_SESSION['upload'];
@@ -15,15 +15,15 @@
                 <table class="tbl-30">
                     <div class="mb-3">
                         <label class="form-label">Title: </label>
-                        <input class="form-control" type="text" name="title" placeholder="Title of the Food">
+                        <input class="form-control" type="text" name="title" placeholder="Title of the Portfolio">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Description: </label>
-                        <textarea class="form-control" name="description" cols="30" rows="5" placeholder="Description of the Food."></textarea>
+                        <textarea class="form-control" name="description" cols="30" rows="5" placeholder="Description of the Portfolio."></textarea>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Price: </label>
-                        <input class="form-control" type="text" name="price">
+                        <label class="form-label">Link: </label>
+                        <input class="form-control" type="text" name="price" placeholder="Portfolio Link">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Select Image: </label>
@@ -67,7 +67,7 @@
                         <input class="form-check-input" type="radio" name="active" value="No"> No
                     </div>
                     <div class="mb-3">
-                        <input type="submit" name="submit" value="Add Food" class="btn btn-primary">
+                        <input type="submit" name="submit" value="Add Portfolio" class="btn btn-primary">
                     </div>
                 </table>
             </form>

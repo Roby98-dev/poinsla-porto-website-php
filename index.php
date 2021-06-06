@@ -2,9 +2,10 @@
     <?php include_once('partials-front/nav_fixed.php'); ?>
     <?php include_once('partials-front/hero.php'); ?>
     <?php include_once('partials-front/search-index.php'); ?>
-    <?php include_once('partials-front/about.php'); ?>
+    <?php include_once('partials-front/aboutUs.php') ?>
+    <?php include_once('partials-front/aboutMe.php'); ?>
     <?php include_once('partials-front/tech-I-Use.php'); ?>
     <?php include_once('partials-front/projects.php') ?>
     <?php include_once('partials-front/skills.php'); ?>
     <?php include_once('partials-front/front-contact.php'); ?>
-    <?php include('partials-front/footer.php'); ?>
+    <?php include_once('partials-front/footer.php'); ?>

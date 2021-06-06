@@ -55,7 +55,7 @@
             <?php
                 }
             } else {
-                echo "<div class='alert alert-danger'>Food not found.</div>";
+                echo "<div class='alert alert-danger'>Item not found.</div>";
             }
 
             ?>

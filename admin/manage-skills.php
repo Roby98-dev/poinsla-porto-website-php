@@ -50,8 +50,7 @@ include('partials/menu.php'); ?>
                     <th>Title</th>
                     <th>Percent</th>
                     <th>Active</th>
-                    <th>Edit Admin</th>
-                    <th>Delete Admin</th>
+                    <th class="text-center">Action</th>
                 </tr>
 
                 <?php
@@ -76,11 +75,9 @@ include('partials/menu.php'); ?>
                                 <td class="text-uppercase"><?= $title; ?></td>
                                 <td><?= $percent; ?>%</td>
                                 <td><?= $active; ?></td>
-                                <td>
-                                    <a href="<?= SITEURL; ?>admin/update-skills.php?id=<?= $id; ?>" class="btn btn-secondary">Edit</a>
-                                </td>
-                                <td>
-                                    <a href="<?= SITEURL; ?>admin/delete-skills.php?id=<?= $id; ?>" class="btn btn-danger">Delete</a>
+                                <td class="text-center">
+                                    <a href="<?= SITEURL; ?>admin/update-skills.php?id=<?= $id; ?>" class="badge btn-secondary">Edit</a>
+                                    <a href="<?= SITEURL; ?>admin/delete-skills.php?id=<?= $id; ?>" class="badge btn-danger">Delete</a>
                                 </td>
                             </tr>
 

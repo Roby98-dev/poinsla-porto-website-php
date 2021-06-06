@@ -58,8 +58,9 @@
         </div>
     </div>
 
-    <p class="text-center mt-5">
-        <a class="btn btn-primary shadow" href="<?= SITEURL; ?>foods.php">See All My Work</a>
-    </p>
+    <div>
+        <p class="text-center mt-5">
+            <a class="btn btn-primary shadow" href="<?= SITEURL; ?>portfolios.php">See All My Work</a>
+        </p>
     </div>
 </section>

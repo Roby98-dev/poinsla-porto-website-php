@@ -42,8 +42,7 @@
                     <th>Image</th>
                     <th>Featured</th>
                     <th>Active</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th class="text-center">Action</th>
                 </tr>
 
                 <?php
@@ -88,11 +87,9 @@
                             </td>
                             <td><?= $featured; ?></td>
                             <td><?= $active; ?></td>
-                            <td>
-                                <a href="<?= SITEURL; ?>admin/update-food.php?id=<?= $id; ?>" class="btn btn-secondary">Edit</a>
-                            </td>
-                            <td>
-                                <a href="<?= SITEURL; ?>admin/delete-food.php?id=<?= $id; ?>&image_name=<?= $image_name; ?>" class="btn btn-danger">Delete</a>
+                            <td class="text-center">
+                                <a href="<?= SITEURL; ?>admin/update-food.php?id=<?= $id; ?>" class="badge btn-secondary">Edit</a>
+                                <a href="<?= SITEURL; ?>admin/delete-food.php?id=<?= $id; ?>&image_name=<?= $image_name; ?>" class="badge btn-danger">Delete</a>
                             </td>
                         </tr>
                 <?php

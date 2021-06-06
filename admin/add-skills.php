@@ -32,7 +32,7 @@
                     <input type="submit" name="submit" value="Add Skills" class="btn btn-primary">
                 </div>
             </form>
-            <!-- Add CAtegory Form Ends -->
+            <!-- Add Category Form Ends -->
         </div>
 
         <?php

@@ -111,9 +111,7 @@ $count3 = mysqli_num_rows($res3);
                     <th>#</th>
                     <th>Full Name</th>
                     <th>Username</th>
-                    <th>Edit Admin</th>
-                    <th>Reset password</th>
-                    <th>Delete Admin</th>
+                    <th class="text-center">Action</th>
                 </tr>
 
                 <?php
@@ -136,14 +134,10 @@ $count3 = mysqli_num_rows($res3);
                                 <td><?= $no++; ?>. </td>
                                 <td><?= $full_name; ?></td>
                                 <td><?= $username; ?></td>
-                                <td>
-                                    <a href="<?= SITEURL; ?>admin/update-admin.php?id=<?= $id; ?>" class="btn btn-secondary">Edit</a>
-                                </td>
-                                <td>
-                                    <a href="<?= SITEURL; ?>admin/update-password.php?id=<?= $id; ?>" class="btn btn-primary">Reset password</a>
-                                </td>
-                                <td>
-                                    <a href="<?= SITEURL; ?>admin/delete-admin.php?id=<?= $id; ?>" class="btn btn-danger">Delete</a>
+                                <td class="text-center">
+                                    <a href="<?= SITEURL; ?>admin/update-admin.php?id=<?= $id; ?>" class="badge btn-secondary">Edit</a>
+                                    <a href="<?= SITEURL; ?>admin/update-password.php?id=<?= $id; ?>" class="badge btn-primary">Reset password</a>
+                                    <a href="<?= SITEURL; ?>admin/delete-admin.php?id=<?= $id; ?>" class="badge btn-danger">Delete</a>
                                 </td>
                             </tr>
 

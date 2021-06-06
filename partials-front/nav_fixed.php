@@ -9,16 +9,41 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-uppercase">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= SITEURL; ?>">Home</a>
+                    <a class="nav-link" href="<?= SITEURL; ?>"><i class="bx bx-home"></i> Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" aria-expanded="false" data-bs-toggle="dropdown" role="button" href="#">Offers</a>
+                    <ul class="dropdown-menu bg-dark text-light">
+                        <li class="dropdown-item">
+                            <a href="<?= SITEURL; ?>categories.php">Web Development</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="<?= SITEURL; ?>portfolios.php">Web Disgn</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="">Internet Marketing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" aria-expanded="false" data-bs-toggle="dropdown" role="button" href="#">Portfolio</a>
+                    <ul class="dropdown-menu bg-dark text-light">
+                        <li class="dropdown-item">
+                            <a href="<?= SITEURL; ?>categories.php">Tech</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="<?= SITEURL; ?>portfolios.php">Works</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="">Projects</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= SITEURL; ?>categories.php">Tech I Use</a>
+                    <a class="nav-link" href="<?= SITEURL; ?>contact.php"><i class="bx bx-phone"></i> Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= SITEURL; ?>portfolios.php">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= SITEURL; ?>contact.php">Contact</a>
+                    <a class="nav-link" href="<?= SITEURL; ?>admin/"><i class="bx bx-user"></i></a>
                 </li>
             </ul>
         </div>

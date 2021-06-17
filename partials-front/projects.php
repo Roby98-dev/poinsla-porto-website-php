@@ -28,11 +28,15 @@
                             <?php
                             if ($image_name == "") {
                             ?>
-                                <img class="card-img-top px-3 py-3 img-fluid rounded" src="assets/images/dafault/dafault.jpeg">
+                                <a href="assets/images/dafault/dafault.jpeg">
+                                    <img class="card-img-top px-3 py-3 img-fluid rounded" src="assets/images/dafault/dafault.jpeg">
+                                </a>
                             <?php
                             } else {
                             ?>
-                                <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" alt="Chicke Hawain Pizza" class="card-img-top px-3 py-3 rounded">
+                                <a target="blank" href="<?= SITEURL; ?>images/food/<?= $image_name; ?>">
+                                    <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" alt="Chicke Hawain Pizza" class="card-img-top px-3 py-3 rounded">
+                                </a>
                             <?php
                             }
                             ?>

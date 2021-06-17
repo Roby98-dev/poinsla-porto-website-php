@@ -11,8 +11,16 @@ $res = mysqli_query($conn, $sql);
 // Check whether the query executed successfully or not
 if ($res == true) {
     $_SESSION['delete'] = "<div class='alert alert-success'>Admin Deleted Successfully.</div>";
-    header('location:' . SITEURL . 'admin/manage-admin.php');
+?>
+    <script>
+        window.location = "index.php";
+    </script>
+<?php
 } else {
     $_SESSION['delete'] = "<div class='alert alert-danger'>Failed to Delete Admin. Try Again Later.</div>";
-    header('location:' . SITEURL . 'admin/manage-admin.php');
+?>
+    <script>
+        window.location = "index.php";
+    </script>
+<?php
 }

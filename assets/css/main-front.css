@@ -142,6 +142,19 @@ figcaption {
   margin: auto;
 }
 
+.this-about-us h2 {
+  color: #00aa00;
+}
+
+.this-about-us h2::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #00aa00;
+  display: block;
+  margin: auto;
+}
+
 .about-image {
   width: 200px;
 }

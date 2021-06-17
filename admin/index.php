@@ -21,6 +21,13 @@ $sql3 = "SELECT * FROM tbl_skills";
 $res3 = mysqli_query($conn, $sql3);
 //Count Rows
 $count3 = mysqli_num_rows($res3);
+
+//Sql Query 
+$sql4 = "SELECT * FROM tbl_message";
+//Execute Query
+$res4 = mysqli_query($conn, $sql4);
+//Count Rows
+$count4 = mysqli_num_rows($res4);
 ?>
 
 <!-- Main Content Section Starts -->
@@ -35,28 +42,36 @@ $count3 = mysqli_num_rows($res3);
     ?>
 
     <div class="row mt-5 mb-5">
-        <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-            <div class="card bg-dark text-light text-center py-5">
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
+            <div class="card bg-dark text-light text-center py-3">
                 <h1>
                     <?= $count; ?>
                 </h1>
                 <p>Categories</p>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-            <div class="card bg-dark text-light text-center py-5">
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
+            <div class="card bg-dark text-light text-center py-3">
                 <h1>
                     <?= $count2; ?>
                 </h1>
                 <p>Portfolio</p>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-            <div class="card bg-dark text-light text-center py-5">
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
+            <div class="card bg-dark text-light text-center py-3">
                 <h1>
                     <?= $count3; ?>
                 </h1>
                 <p>Total Skills</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
+            <div class="card bg-dark text-light text-center py-3">
+                <h1>
+                    <?= $count4; ?>
+                </h1>
+                <p>Total Message</p>
             </div>
         </div>
     </div>
@@ -65,7 +80,7 @@ $count3 = mysqli_num_rows($res3);
 
 <!-- Main Content Section Starts -->
 <div class="container">
-    <h1 class="text-center mt-5">Manage Admin</h1>
+    <h1 class="text-center mt-5 text-uppercase">Manage Admin</h1>
     <a href="add-admin.php" class="btn btn-primary mt-2 mb-3">Add Admin</a>
     <div class="row">
 
@@ -99,18 +114,21 @@ $count3 = mysqli_num_rows($res3);
             echo $_SESSION['change-pwd'];
             unset($_SESSION['change-pwd']);
         }
+        if (isset($_SESSION['upload'])) {
+            echo $_SESSION['upload'];
+            unset($_SESSION['upload']);
+        }
         ?>
 
         <!-- Button to Add Admin -->
 
-        <br /><br />
-
         <div class="table-responsive mb-5">
-            <table class="table">
+            <table class="table-hover table">
                 <tr class="table-dark">
                     <th>#</th>
                     <th>Full Name</th>
                     <th>Username</th>
+                    <th class="text-center">Photo</th>
                     <th class="text-center">Action</th>
                 </tr>
 
@@ -128,12 +146,28 @@ $count3 = mysqli_num_rows($res3);
                             $id = $rows['id'];
                             $full_name = $rows['full_name'];
                             $username = $rows['username'];
+                            $profile = $rows['image_name'];
                 ?>
 
                             <tr>
                                 <td><?= $no++; ?>. </td>
                                 <td><?= $full_name; ?></td>
                                 <td><?= $username; ?></td>
+                                <td class="text-center">
+                                    <?php
+                                    if ($profile == "") {
+                                    ?>
+                                        <img class="img-fluid img-thumbnail rounded-circle" src="../assets/images/default/default.jpg" width="100px">
+                                    <?php
+                                    } else {
+                                    ?>
+                                        <a target="blank" href="<?= SITEURL; ?>images/profile/<?= $profile; ?>">
+                                            <img class="img-fluid rounded-circle" src="<?= SITEURL; ?>images/profile/<?= $profile; ?>" width="100px">
+                                        </a>
+                                    <?php
+                                    }
+                                    ?>
+                                </td>
                                 <td class="text-center">
                                     <a href="<?= SITEURL; ?>admin/update-admin.php?id=<?= $id; ?>" class="badge btn-secondary">Edit</a>
                                     <a href="<?= SITEURL; ?>admin/update-password.php?id=<?= $id; ?>" class="badge btn-primary">Reset password</a>
@@ -155,4 +189,5 @@ $count3 = mysqli_num_rows($res3);
 </div>
 <!-- Main Content Setion Ends -->
 
+<?php include('tbl_msgs.php') ?>
 <?php include('partials/footer.php') ?>

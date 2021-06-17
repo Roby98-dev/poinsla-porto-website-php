@@ -14,7 +14,7 @@
 
     <div class="row justify-content-center">
         <div class="col-lg-4 col-md-12 col-sm-12">
-            <form action="" method="POST">
+            <form action="" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="fullName" class="form-label">Full Name:</label>
                     <input class="form-control" type="text" name="full_name" placeholder="Enter Your Name">
@@ -22,6 +22,10 @@
                 <div class="mb-3">
                     <label for="username" class="form-label">Username:</label>
                     <input class="form-control" type="text" name="username" placeholder="Your Username">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Select Image: </label>
+                    <input class="form-control" type="file" name="image">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password:</label>
@@ -41,10 +45,39 @@ if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = md5($_POST['password']);
 
+    if (isset($_FILES['image']['name'])) {
+        $image_name = $_FILES['image']['name'];
+
+        if ($image_name != "") {
+            $ext = end(explode('.', $image_name));
+
+            $image_name = "Photo-profile-" . rand(0000, 9999) . "." . $ext;
+
+            $src = $_FILES['image']['tmp_name'];
+
+            $dst = "../images/profile/" . $image_name;
+
+            $upload = move_uploaded_file($src, $dst);
+
+            if ($upload == false) {
+                $_SESSION['upload'] = "<div class='alert alert-danger'>Failed to Upload Image.</div>";
+?>
+                <script>
+                    window.location = "index.php";
+                </script>
+        <?php
+                die();
+            }
+        }
+    } else {
+        $image_name = "default.jpg";
+    }
+
     $sql = "INSERT INTO tbl_admin SET 
-            full_name='$full_name',
-            username='$username',
-            password='$password'
+            full_name = '$full_name',
+            username = '$username',
+            image_name = '$image_name',
+            password = '$password'
         ";
 
     $res = mysqli_query($conn, $sql) or die(mysqli_error(''));
@@ -52,11 +85,19 @@ if (isset($_POST['submit'])) {
     if ($res == TRUE) {
         $_SESSION['add'] = "<div class='alert alert-success'>Admin Added Successfully.</div>";
         //Redirect Page to Manage Admin
-        header("location:" . SITEURL . 'admin/manage-admin.php');
+        ?>
+        <script>
+            window.location = "index.php";
+        </script>
+    <?php
     } else {
         $_SESSION['add'] = "<div class='alert alert-danger'>Failed to Add Admin.</div>";
         //Redirect Page to Add Admin
-        header("location:" . SITEURL . 'admin/add-admin.php');
+    ?>
+        <script>
+            window.location = "index.php";
+        </script>
+<?php
     }
 }
 ?>

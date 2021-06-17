@@ -1,6 +1,6 @@
-<section class="bg-dark text-light py-5">
+<section class="bg-dark this-about-us text-light py-5">
     <div class="container">
-        <div class="row about-me pb-5 mt-5">
+        <div class="row pb-5 mt-5">
             <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card about-card shadow" style="height: auto;">
                     <div class="card-body mx-5 py-4">

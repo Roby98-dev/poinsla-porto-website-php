@@ -13,6 +13,6 @@
             </div>
             <span id="typed" style="white-space:pre;"></span>
         </div>
-        <a class="btn btn-info text-uppercase mt-3 shadow" href="<?= SITEURL; ?>contact.php">Contact Now!</a>
+        <!-- <a class="btn btn-info text-uppercase mt-3 shadow" href="<?= SITEURL; ?>contact.php">Contact Now!</a> -->
     </div>
 </header>

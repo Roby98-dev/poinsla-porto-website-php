@@ -9,6 +9,7 @@
                 <h3 class="about-name mb-5">I'am Roby</h3>
                 <p>Hei! My name is Roby, I'am a Web Developer. I have 2 years of experience on building webistes using HTML, CSS, JavaScript and WordPress. I also able to developing website using Frameworks, such as Bootstrap, React and any others technology.</p>
                 <a class="btn btn-info text-uppercase mt-5 shadow" href="<?= SITEURL; ?>contact.php">Contact Now!</a>
+                <a class="btn btn-info text-uppercase mt-5 shadow" href="<?= SITEURL; ?>cv.php">Resume</a>
             </div>
         </div>
         <h5 class="text-center mt-5 mb-5" data-aos="fade-up">This is who I am in a nutshell</h5>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 02, 2021 at 12:05 PM
+-- Generation Time: Jun 12, 2021 at 09:15 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -31,6 +31,7 @@ CREATE TABLE `tbl_admin` (
   `id` int(10) UNSIGNED NOT NULL,
   `full_name` varchar(100) NOT NULL,
   `username` varchar(100) NOT NULL,
+  `image_name` varchar(255) NOT NULL DEFAULT 'default.jpg',
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -38,9 +39,9 @@ CREATE TABLE `tbl_admin` (
 -- Dumping data for table `tbl_admin`
 --
 
-INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`) VALUES
-(12, 'Administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
-(13, 'Roby Adi Putra', 'roby', 'f99cc4e7daff1b96f7d221bd8d7aedef');
+INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `image_name`, `password`) VALUES
+(12, 'Administrator', 'admin', 'Photo_Profile_Edit98.jpg', '21232f297a57a5a743894a0e4a801fc3'),
+(13, 'Roby Adi Putra', 'roby', 'Photo_Profile_Edit961.jpeg', 'f99cc4e7daff1b96f7d221bd8d7aedef');
 
 -- --------------------------------------------------------
 
@@ -69,7 +70,7 @@ INSERT INTO `tbl_category` (`id`, `title`, `image_name`, `featured`, `active`) V
 (11, 'Angel 6', 'Food_Category_923.jpg', 'Yes', 'Yes'),
 (12, 'angel 7', 'Food_Category_879.jpg', 'Yes', 'Yes'),
 (13, 'Angel 8', 'Food_Category_680.jpg', 'Yes', 'Yes'),
-(14, 'Angel 9', 'Food_Category_595.jpg', 'Yes', 'Yes');
+(14, 'Angel 9', 'Food_Category_205.jpg', 'Yes', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -98,7 +99,9 @@ INSERT INTO `tbl_food` (`id`, `title`, `description`, `price`, `image_name`, `ca
 (5, 'Smoky BBQ Pizza', 'Best Firewood Pizza in Town.', '6.000', 'Food-Name-5178.jpg', 4, 'Yes', 'Yes'),
 (6, 'Sadeko Momo', 'Best Spicy Momo for Winter', '6.000', 'Food-Name-6664.jpg', 6, 'Yes', 'Yes'),
 (7, 'Mixed Pizza', 'Pizza with chicken, Ham, Buff, Mushroom and Vegetables', '10.000', 'Food-Name-5434.jpg', 4, 'Yes', 'Yes'),
-(12, 'Bakso Sapi', 'Bakso Sapi', '25.000', 'Food-Name-1786.jpg', 4, 'Yes', 'Yes');
+(12, 'Bakso Sapi', 'Bakso Sapi', '25.000', 'Food-Name-1786.jpg', 4, 'Yes', 'Yes'),
+(13, 'Iluh', 'Iluh Jegeg', 'Test', 'Food-Name-8884.jpg', 14, 'Yes', 'Yes'),
+(14, 'Marta', 'Marta', 'Marta', 'Food-Name-9842.jpg', 13, 'Yes', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -173,7 +176,8 @@ INSERT INTO `tbl_skills` (`id`, `title`, `percent`, `active`) VALUES
 (2, 'Javascript', 37, 'Yes'),
 (5, 'Php', 35, 'Yes'),
 (6, 'Wordpress', 40, 'Yes'),
-(7, 'bootstrap', 70, 'Yes');
+(7, 'bootstrap', 70, 'Yes'),
+(10, 'CodeIgniter', 45, 'Yes');
 
 --
 -- Indexes for dumped tables
@@ -224,7 +228,7 @@ ALTER TABLE `tbl_skills`
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tbl_category`
@@ -236,7 +240,7 @@ ALTER TABLE `tbl_category`
 -- AUTO_INCREMENT for table `tbl_food`
 --
 ALTER TABLE `tbl_food`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tbl_message`
@@ -254,7 +258,7 @@ ALTER TABLE `tbl_order`
 -- AUTO_INCREMENT for table `tbl_skills`
 --
 ALTER TABLE `tbl_skills`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

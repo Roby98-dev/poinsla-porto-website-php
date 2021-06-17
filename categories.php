@@ -21,7 +21,7 @@
             ?>
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
-                        <a href="<?= SITEURL; ?>category-foods.php?category_id=<?= $id; ?>">
+                        <a href="<?= SITEURL; ?>category-projects.php?category_id=<?= $id; ?>">
                             <div class="card bg-secondary">
                                 <div class="card-body">
                                     <?php
@@ -53,6 +53,5 @@
     </div>
 </section>
 <!-- Categories Section Ends Here -->
-
 
 <?php include('partials-front/footer.php'); ?>

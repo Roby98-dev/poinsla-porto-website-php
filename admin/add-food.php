@@ -43,9 +43,7 @@
                                     $id = $row['id'];
                                     $title = $row['title'];
                             ?>
-
                                     <option value="<?= $id; ?>"><?= $title; ?></option>
-
                                 <?php
                                 }
                             } else {
@@ -93,23 +91,17 @@
             }
 
             if (isset($_FILES['image']['name'])) {
-                //Get the details of the selected image
                 $image_name = $_FILES['image']['name'];
 
                 if ($image_name != "") {
-                    //Get the extension of selected image (jpg, png, gif, etc.) "vijay-thapa.jpg" vijay-thapa jpg
                     $ext = end(explode('.', $image_name));
 
-                    // Create New Name for Image
-                    $image_name = "Food-Name-" . rand(0000, 9999) . "." . $ext; //New Image Name May Be "Food-Name-657.jpg"
+                    $image_name = "Food-Name-" . rand(0000, 9999) . "." . $ext;
 
-                    // Source path is the current location of the image
                     $src = $_FILES['image']['tmp_name'];
 
-                    //Destination Path for the image to be uploaded
                     $dst = "../images/food/" . $image_name;
 
-                    //Finally Uppload the food image
                     $upload = move_uploaded_file($src, $dst);
 
                     //check whether image uploaded of not

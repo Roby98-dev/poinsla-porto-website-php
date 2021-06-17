@@ -11,7 +11,7 @@
     <!-- footer Section Starts Here -->
     <div class="pb-4">
         <div class="container text-center">
-            <p>&copy; 2019 - <?= date('Y'); ?> All Rights Reserved. Designed By: <a href="https://poinsla.xyz">Poinsla.xyz</a> || <a href="<?= SITEURL; ?>admin/"><i class="bx bxs-user"></i></a></p>
+            <p>&copy; 2019 - <?= date('Y'); ?> All Rights Reserved. Designed By: <a href="https://poinsla.xyz">Poinsla.xyz</a> | v 1.10 | <a href="<?= SITEURL; ?>admin/"><i class="bx bxs-user"></i></a></p>
         </div>
     </div>
 </div>
